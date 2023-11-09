@@ -1,0 +1,18 @@
+/* global */
+
+
+.container{
+    margin: 0 10%
+}
+.mt-3 {
+    margin-top: 20px
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.header button {
+    background: #3f51b5;
+    color: #fff
+}

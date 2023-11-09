@@ -1,0 +1,19 @@
+<section class="main">
+    <div class="login_form">
+        <h1>Welcom ..</h1>
+        <form [formGroup]="loginForm">
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" type="email" matInput placeholder="your email">
+            </mat-form-field>     
+            
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" type="password" matInput placeholder="your password">
+              </mat-form-field>   
+
+              <button (click)="login()" mat-button color="primary">Login</button>
+          </form>
+    </div>
+    
+</section>

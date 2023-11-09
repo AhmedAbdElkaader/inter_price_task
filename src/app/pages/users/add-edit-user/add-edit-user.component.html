@@ -1,0 +1,28 @@
+<section class="main">
+        <h3>{{heder_body_title}}</h3>
+        <hr>
+        <form [formGroup]="add_user_Form">
+    
+            <mat-form-field class="example-full-width">
+                <mat-label>First Name</mat-label>
+                <input formControlName="firstName" type="text" matInput placeholder="your firstName">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+                <mat-label>Last Name</mat-label>
+                <input formControlName="lastName" type="text" matInput placeholder="your lastName">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" type="email" matInput placeholder="your email">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" type="password" matInput placeholder="your password">
+            </mat-form-field>
+    
+            <button (click)="add_edit_user()" [disabled]="!add_user_Form.valid" mat-button color="primary">{{heder_body_title}}</button>
+        </form>
+    </section>
